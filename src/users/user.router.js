@@ -5,6 +5,6 @@ const { getAllUserController } = require('./user.controller');
 const userRouter = express.Router();
 
 //get all users
-userRouter.get('/', verifyToken, getAllUserController);
+userRouter.get('/', getAllUserController);
 
 module.exports = userRouter;
