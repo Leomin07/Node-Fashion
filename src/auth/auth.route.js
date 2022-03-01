@@ -1,5 +1,5 @@
 const express = require('express');
-const { verifyToken } = require('../users/middlewareController');
+const { verifyToken } = require('../config/middlewareController');
 const {
   registerController,
   loginController,

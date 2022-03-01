@@ -1,10 +1,10 @@
 const bcryptjs = require('bcryptjs');
+const userModel = require('../users/user.model');
+const jwt = require('jsonwebtoken');
 const {
   generateAccessToken,
   generateRefreshToken,
-} = require('../users/middlewareController');
-const userModel = require('../users/user.model');
-const jwt = require('jsonwebtoken');
+} = require('../config/middlewareController');
 
 let refreshTokens = [];
 
